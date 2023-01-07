@@ -1,10 +1,11 @@
-import Image from "next/image";
+import { IntroBlock } from "../blocks";
 import { SectionTitle } from "../text";
 import { ScrollSpyContainer } from "../ui/containers";
 
 export const PersonalInfo = () => {
   return (
     <ScrollSpyContainer section="">
+      <IntroBlock />
       <article className="relative flex flex-row items-center justify-between">
         <div>
           <SectionTitle>Frontend Developer</SectionTitle>

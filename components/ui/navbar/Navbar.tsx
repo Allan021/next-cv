@@ -14,7 +14,9 @@ export const Navbar: FC = () => {
       transition duration-600 ease-in-out  z-50 top-0 left-0 right-0`}
     >
       <nav
-        className={`container flex flex-row items-center justify-around md:h-24 lg:h-28`}
+        className={`container flex flex-row items-center justify-between md:h-24 lg:h-28
+        max-w-6xl
+        `}
       >
         <div className="mt-2">
           <Logo />

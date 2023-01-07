@@ -15,7 +15,11 @@ const UI_INITIAL_STATE: UIState = {
     { href: "services", name: "Services", id: "Services" },
     { href: "portafolio", name: "Portafolio", id: "Portafolio" },
     { href: "reviews", name: "Reviews", id: "Reviews" },
-
+    {
+      href: "works",
+      name: "Works",
+      id: "Works",
+    },
     {
       href: "journey",
       name: "Journey",

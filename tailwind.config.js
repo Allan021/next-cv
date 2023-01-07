@@ -19,6 +19,181 @@ module.exports = {
         500: "#22cc6a",
       },
     },
+    keyframes: {
+      vline1anim: {
+        "0%": {
+          opacity: 0,
+          visibility: "hidden",
+          transform: "translateX(-100px)",
+        },
+
+        "20%": {
+          transform: "translateX(0)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "30%": {
+          transform: "translateX(0)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "10%": {
+          transform: "translateX(100px)",
+          opacity: 1,
+          visibility: "visible",
+        },
+        "50%": {
+          transform: "translateX(100px)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "80%": {
+          opacity: 0,
+          visibility: "hidden",
+          transform: "translateX(0px)",
+        },
+
+        "100%": {
+          opacity: 1,
+          visibility: "visible",
+          transform: "translateX(0)",
+        },
+      },
+
+      vline2anim: {
+        "0%": {
+          opacity: 0,
+          visibility: "hidden",
+          transform: "translateX(-100px)",
+        },
+
+        "20%": {
+          transform: "translateX(0)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "30%": {
+          transform: "translateX(0)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "10%": {
+          transform: "translateX(-100px)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "50%": {
+          transform: "translateX(-100px)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "80%": {
+          opacity: 0,
+          visibility: "hidden",
+          transform: "translateX(0px)",
+        },
+
+        "100%": {
+          opacity: 1,
+          visibility: "visible",
+          transform: "translateX(0)",
+        },
+      },
+
+      vline3anim: {
+        "0%": {
+          opacity: 0,
+          visibility: "hidden",
+          transform: "translateX(150px)",
+        },
+
+        "20%": {
+          transform: "translateX(0)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "30%": {
+          transform: "translateX(0)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "10%": {
+          transform: "translateX(150px)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "50%": {
+          transform: "translateX(150px)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "80%": {
+          opacity: 0,
+          visibility: "hidden",
+          transform: "translateX(0px)",
+        },
+
+        "100%": {
+          opacity: 1,
+          visibility: "visible",
+          transform: "translateX(0)",
+        },
+      },
+      vline4anim: {
+        "0%": {
+          opacity: 0,
+          visibility: "hidden",
+          transform: "translateX(-100px)",
+        },
+
+        "20%": {
+          transform: "translateX(0)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "30%": {
+          transform: "translateX(0)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "10%": {
+          transform: "translateX(-100px)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "50%": {
+          transform: "translateX(-100px)",
+          opacity: 1,
+          visibility: "visible",
+        },
+
+        "80%": {
+          opacity: 0,
+          visibility: "hidden",
+          transform: "translateX(0px)",
+        },
+
+        "100%": {
+          opacity: 1,
+          visibility: "visible",
+          transform: "translateX(0)",
+        },
+      },
+    },
 
     boxShadow: {
       DEFAULT: "0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1)",
@@ -43,6 +218,13 @@ module.exports = {
       backgroundColor: {
         primary: "#22cc6a",
         secondary: "#000",
+      },
+
+      animation: {
+        vline1anim: "vline1anim 0.5s ease-in-out 4 forwards",
+        vline2anim: "vline2anim 0.5s ease-in-out 4 forwards",
+        vline3anim: "vline3anim 0.5s ease-in-out 4 forwards",
+        vline4anim: "vline4anim 0.5s ease-in-out 4 forwards",
       },
     },
   },
