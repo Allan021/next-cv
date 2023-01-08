@@ -1,22 +1,23 @@
-.navbar{
+.navbar {
     position: sticky;
     top: 0;
     z-index: 999;
     justify-content: space-between;
     align-items: center;
-    padding:  1rem 2rem;
+    padding: 1rem 2rem;
     color: #cfcfcf;
+    background-color: transparent;
 }
 
 
 
-.nav-item{
+.nav-item {
     padding-bottom: 0.5rem;
     position: relative;
     cursor: pointer;
 }
 
-.nav-item::after{
+.nav-item::after {
     background: none repeat scroll 0 0 transparent;
     content: "";
     bottom: 0;
@@ -29,7 +30,7 @@
     display: block;
 }
 
-.active-line{
+.active-line {
     width: 40px;
     left: 0;
     height: 2px;
@@ -39,7 +40,7 @@
     background-color: #22cc6a;
 }
 
-.nav-item:hover:after { 
-    width: 40px; 
-    left: 0; 
+.nav-item:hover:after {
+    width: 40px;
+    left: 0;
 }

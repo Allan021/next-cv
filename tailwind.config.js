@@ -13,12 +13,7 @@ module.exports = {
     container: {
       center: true,
     },
-    colors: {
-      transparent: "transparent",
-      green: {
-        500: "#22cc6a",
-      },
-    },
+   
     keyframes: {
       vline1anim: {
         "0%": {
@@ -193,6 +188,17 @@ module.exports = {
           transform: "translateX(0)",
         },
       },
+
+      fadeIn : {
+        0: {
+            opacity: 0,
+            transform: 'translateX(-20px)'
+        },
+        100: {
+            opacity: 1,
+            transform: 'translateX(0)'
+      }
+    },
     },
 
     boxShadow: {
@@ -215,9 +221,21 @@ module.exports = {
         "4xl": "2rem",
       },
 
+      colors: {
+        green: {
+          400: "#22cc6a",
+          500: "#22cc6a",
+          600: "#1db65b",
+          700: "#1aa14c",
+          800: "#178c3d",
+          900: "#14772e",
+        },
+      },
+
       backgroundColor: {
         primary: "#22cc6a",
-        secondary: "#000",
+        secondary: "#1a242c",
+        tertiary: "#20ce65",
       },
 
       animation: {
@@ -225,6 +243,7 @@ module.exports = {
         vline2anim: "vline2anim 0.5s ease-in-out 4 forwards",
         vline3anim: "vline3anim 0.5s ease-in-out 4 forwards",
         vline4anim: "vline4anim 0.5s ease-in-out 4 forwards",
+        fadeInTitle: "fadeIn 4s ease-in-out"
       },
     },
   },

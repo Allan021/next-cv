@@ -1,4 +1,4 @@
-import { SectionTitle } from "../text";
+import { SectionTitle } from "../ui/text";
 import { ScrollSpyContainer } from "../ui/containers";
 
 export const ServicesSection = () => {

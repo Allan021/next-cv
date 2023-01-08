@@ -6,11 +6,13 @@ interface ScrollSpyContainerProps {
   children: React.ReactNode | React.ReactNode[];
   section: string;
   offset?: number;
+  background?: string;
 }
 
 export const ScrollSpyContainer: FC<ScrollSpyContainerProps> = ({
   section,
   children,
+  background,
 }) => {
   const { setActiveSection } = useUIContext();
   const { ref, inView } = useInView({
@@ -29,7 +31,7 @@ export const ScrollSpyContainer: FC<ScrollSpyContainerProps> = ({
       ref={ref}
       id={section}
       className={`relative ${styles["scroll-spy-container"]} container mx-auto
-      max-w-6xl
+      max-w-6xl ${background ? background : ""}
       `}
     >
       {children}
