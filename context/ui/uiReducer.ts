@@ -1,6 +1,8 @@
 import { UIState } from "./";
 
-type UIActionType = { type: "[UI] - Set Active Section"; payload: string };
+type UIActionType = { type: "[UI] - Set Active Section"; payload: string } | {
+  type: "[UI] - Toggle Mobile Menu";
+}
 
 export const uiReducer = (state: UIState, action: UIActionType): UIState => {
   switch (action.type) {
@@ -10,6 +12,11 @@ export const uiReducer = (state: UIState, action: UIActionType): UIState => {
         activeSection: action.payload,
       };
 
+    case "[UI] - Toggle Mobile Menu":
+      return {
+        ...state,
+        isMobileMenuOpen: !state.isMobileMenuOpen,
+      };
     default:
       return state;
   }

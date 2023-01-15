@@ -10,6 +10,8 @@ interface ContextProps {
   activeSection: string;
   setActiveSection: (activeSection: string) => void;
   sections: Section[];
+  isMobileMenuOpen: boolean;
+  toggleMobileMenu: () => void;
 }
 
 export const UIContext = createContext({} as ContextProps);
