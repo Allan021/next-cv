@@ -9,7 +9,7 @@ export const Navbar: FC = () => {
   return (
     <header
       className={`
-      ${activeSection === "" ? "bg-transparent" : "bg-secondary shadow-nav"}
+      ${activeSection === "" ? "bg-secondary" : "bg-dark shadow-nav"}
       px-5  bg-transaparent overscroll-x-none sticky
       transition duration-600 ease-in-out  z-50 top-0 left-0 right-0`}
     >

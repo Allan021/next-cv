@@ -30,11 +30,17 @@ export const ScrollSpyContainer: FC<ScrollSpyContainerProps> = ({
     <section
       ref={ref}
       id={section}
-      className={`relative ${styles["scroll-spy-container"]} container mx-auto
-      max-w-6xl ${background ? background : ""}
+      className={`relative ${styles["scroll-spy-container"]}
+       ${background ? background : ""} w-full d-flex flex-column justify-content-center align-items-center px-4
       `}
     >
-      {children}
+      <article
+      className="max-w-6xl container"
+      >
+        {
+          children
+        }
+      </article>
     </section>
   );
 };

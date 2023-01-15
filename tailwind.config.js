@@ -236,6 +236,7 @@ module.exports = {
         primary: "#22cc6a",
         secondary: "#1a242c",
         tertiary: "#20ce65",
+        dark: "#111111",
       },
 
       animation: {

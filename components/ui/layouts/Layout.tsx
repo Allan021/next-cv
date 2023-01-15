@@ -21,7 +21,7 @@ export const Layout: FC<LayoutProps> = ({
       </Head>
       <Navbar />
       <main>
-        <div className="container mx-auto px-4">{children}</div>
+        <div>{children}</div>
       </main>
     </>
   );
