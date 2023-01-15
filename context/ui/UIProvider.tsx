@@ -5,6 +5,7 @@ import { Section } from "./UIContext";
 export interface UIState {
   activeSection: string;
   sections: Section[];
+  isMobileMenuOpen : boolean;
 }
 
 const UI_INITIAL_STATE: UIState = {
@@ -27,6 +28,7 @@ const UI_INITIAL_STATE: UIState = {
     },
     { href: "contact", name: "Contact", id: "Contact" },
   ],
+  isMobileMenuOpen: false,
 };
 
 export const UIProvider = ({ children }: any) => {
@@ -39,11 +41,18 @@ export const UIProvider = ({ children }: any) => {
     });
   };
 
+  const toggleMobileMenu = () => {
+    dispatch({
+      type: "[UI] - Toggle Mobile Menu",
+    });
+  };
+
   return (
     <UIContext.Provider
       value={{
         ...state,
         setActiveSection,
+        toggleMobileMenu,
       }}
     >
       {children}
