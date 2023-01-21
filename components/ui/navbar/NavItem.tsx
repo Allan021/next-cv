@@ -15,7 +15,11 @@ export const NavItem: FC<NavItemProps> = ({ href, text }) => {
   return (
     <li
       className={`${Styles["nav-item"]}
-
+        ${
+          activeSection === href
+            ? "bg-white md:bg-tranparent"
+            : "bg-transparent"
+        }
 
       `}
       onClick={() => setActiveSection(href)}
@@ -27,7 +31,7 @@ export const NavItem: FC<NavItemProps> = ({ href, text }) => {
           md:text-md transition-duration-500 ease-in-out hover:text-green-500
            ${
              activeSection === href
-               ? "text-green-500 font-medium"
+               ? "text-green-500 font-bold md:font-medium"
                : "text-white"
            } 
           `}

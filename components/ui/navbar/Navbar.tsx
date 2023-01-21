@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useUIContext } from "../../../context";
-import { Logo, HamburguerButton,NavList} from "./";
+import { Logo, HamburguerButton, NavList } from "./";
 
 export const Navbar: FC = () => {
   const { activeSection } = useUIContext();
@@ -20,7 +20,7 @@ export const Navbar: FC = () => {
         <div className="mt-2">
           <Logo />
         </div>
-        <HamburguerButton/>
+        <HamburguerButton />
         <NavList />
       </nav>
     </header>
