@@ -3,15 +3,22 @@ import { useUIContext } from "../../../context";
 import { NavItem } from "./NavItem";
 
 export const NavList: FC = () => {
-  const { sections } = useUIContext();
+  const { sections, isMobileMenuOpen } = useUIContext();
 
   return (
-    <div className="hidden w-full md:block md:w-auto">
-      <ul className="flex mt-4 md:flex-row md:space-x-8 md:border-0">
-        {sections.map((section) => (
-          <NavItem key={section.id} href={section.href} text={section.name} />
-        ))}
-      </ul>
-    </div>
+    <ul
+      className={`md:flex md:items-center md:z-auto md:static absolute flex-col mt-0 md:mt-2 md:flex-row md:space-x-2 lg:space-x-8 md:border-0 w-full md:w-auto left-0 md:opacity-100 transition-height ease-in  
+      top-[96px]  bg-darkMedium
+      duration-500 md:scale-y-100
+        bg-
+      ${isMobileMenuOpen ? "scale-y-1" : "scale-y-0"}
+
+      `}
+      style={{ transformOrigin: "0 0 0" }}
+    >
+      {sections.map((section) => (
+        <NavItem key={section.id} href={section.href} text={section.name} />
+      ))}
+    </ul>
   );
 };

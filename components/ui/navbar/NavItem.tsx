@@ -14,15 +14,24 @@ export const NavItem: FC<NavItemProps> = ({ href, text }) => {
   const { activeSection, setActiveSection } = useUIContext();
   return (
     <li
-      className={`${Styles["nav-item"]}`}
+      className={`${Styles["nav-item"]}
+        ${
+          activeSection === href
+            ? "bg-white md:bg-tranparent"
+            : "bg-transparent"
+        }
+
+      `}
       onClick={() => setActiveSection(href)}
     >
       <Link href={`#${href}`} passHref>
         <span
-          className={`nav-item block bg-blue-700 rounded md:bg-transparent md:p-0 text-white bg-transparent text-md font-light transition-duration-300 ease-in-out hover:text-green-500
+          className={`block bg-blue-700 rounded md:bg-transparent md:p-0 text-white bg-transparent 
+          text-lg text-left md:text-center 
+          md:text-md transition-duration-500 ease-in-out hover:text-green-500
            ${
              activeSection === href
-               ? "text-green-500 font-medium"
+               ? "text-green-500 font-bold md:font-medium"
                : "text-white"
            } 
           `}

@@ -189,7 +189,7 @@ module.exports = {
         },
       },
 
-      fadeIn : {
+    fadeIn : {
         0: {
             opacity: 0,
             transform: 'translateX(-20px)'
@@ -198,8 +198,12 @@ module.exports = {
             opacity: 1,
             transform: 'translateX(0)'
       }
+   
     },
+    
     },
+
+      
 
     boxShadow: {
       DEFAULT: "0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1)",
@@ -237,6 +241,7 @@ module.exports = {
         secondary: "#1a242c",
         tertiary: "#20ce65",
         dark: "#111111",
+        darkMedium: "#040913",
       },
 
       animation: {
@@ -244,7 +249,7 @@ module.exports = {
         vline2anim: "vline2anim 0.5s ease-in-out 4 forwards",
         vline3anim: "vline3anim 0.5s ease-in-out 4 forwards",
         vline4anim: "vline4anim 0.5s ease-in-out 4 forwards",
-        fadeInTitle: "fadeIn 4s ease-in-out"
+        fadeInTitle: "fadeIn 4s ease-in-out",
       },
     },
   },
